@@ -1,0 +1,64 @@
+-- Alguns experimentos com H2 Database e SQL
+
+-- Apaga as tabelas
+DROP TABLE PADS IF EXISTS;
+DROP TABLE OWNERS IF EXISTS;
+
+-- Cria a tabela OWNERS
+CREATE TABLE OWNERS (
+    ID BIGINT PRIMARY KEY AUTO_INCREMENT,
+    UID VARCHAR(127) NOT NULL,
+    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    LAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    DISPLAYNAME VARCHAR(255),
+    EMAIL VARCHAR(255) NOT NULL,
+    PHOTOURL VARCHAR(255),
+    STATUS VARCHAR(3) DEFAULT 'ON' CHECK (STATUS IN ('ON', 'OFF', 'DEL')),
+    METADATA TEXT
+);
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+    PAD_ID BIGINT PRIMARY KEY AUTO_INCREMENT,
+    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PAD_NAME VARCHAR(127) NOT NULL,
+    PAD_TEXT LONGTEXT, -- LONGTEXT é geralmente mapeado para CLOB ou VARCHAR no H2
+    PAD_OWNER BIGINT,
+    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),
+    PAD_METADATA TEXT,
+    -- Relacionamento entre PADS e OWNERS
+    -- Chave estrangeira
+    FOREIGN KEY (PAD_OWNER) REFERENCES OWNERS (ID)
+);
+
+-- Insere novo PAD para o OWNER 1
+INSERT INTO PADS (padname, padtext, owner)
+VALUES ('Primeiro Teste', 'Lorem ipsum', 1);
+
+-- Insere novo OWNER
+-- Campos da tabela: ID, CREATED_AT, DISPLAY_NAME, EMAIL, LAST_LOGIN_AT, METADATA, PHOTOURL, STATUS, UID
+INSERT INTO OWNERS (
+    CREATED_AT,
+    DISPLAY_NAME,
+    EMAIL,
+    LAST_LOGIN_AT,
+    PHOTOURL,
+    UID,
+    STATUS
+) VALUES (
+    '2025-11-04 11:00:00',
+    'Marineuza Siriliano',
+    'marineuza@gmail.com',
+    '2025-08-29 10:14:00',
+    'fotomari.jpg',
+    '93H4T2034H384HT8342H',
+    'ON'
+), (
+    '2025-11-04 11:19:00',
+    'Joca da Silva',
+    'joca@silva.com',
+    '2025-08-19 10:14:00',
+    'fotojoca.png',
+    'FY48RY493URT84YT',
+    'ON'
+);

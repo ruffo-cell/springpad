@@ -199,3 +199,356 @@ OWNERS OWNERS OWNERS OWNERS [42000-232]
 2025-10-30 11:38:24.521252-03:00 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]OWNERS OWNERS OWNERS OWNERS"; SQL statement:
 OWNERS OWNERS OWNERS OWNERS [42000-232]
+2025-11-04 10:23:13.042150-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext LONGTEXT,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext LONGTEXT,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:25:56.854811-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext LONGTEXT,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext LONGTEXT,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:25:59.241444-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext LONGTEXT,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext LONGTEXT,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:25:59.817012-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext LONGTEXT,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext LONGTEXT,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:26:00.563168-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext LONGTEXT,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext LONGTEXT,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:27:23.626418-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext LONGTEXT,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext LONGTEXT,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:36:58.055062-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext ,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext ,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:36:59.291727-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext ,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext ,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:36:59.938513-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext ,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext ,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:37:23.174856-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext ,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext ,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:55:58.972378-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Alguns experimentos com h2 Database e SQL\000d\000a\000d\000a-- Cria a tabela ""pads""\000d\000aCREATE TABLE PADS (\000d\000a-- Chave primária\000d\000a   id BIGINT PRIMARY KEY [*]AUTO-INCREMENT,\000d\000a\000d\000a   createdAt TIME DEFAULT CURRENT-TIMESTAMP,\000d\000a   padname VARCHAR(127)  NOT NULL,\000d\000a   padtext ,\000d\000a   owner BIGINT,\000d\000a   -- Um comentario na estrutura do campo\000d\000a   status VARCHAR(3)  COMMENT ""'on' ou 'off'"",\000d\000a   metadata TEXT COMMENT ""Reservado para uso futuro""\000d\000a\000d\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Alguns experimentos com h2 Database e SQL
+
+-- Cria a tabela "pads"
+CREATE TABLE PADS (
+-- Chave primária
+   id BIGINT PRIMARY KEY AUTO-INCREMENT,
+
+   createdAt TIME DEFAULT CURRENT-TIMESTAMP,
+   padname VARCHAR(127)  NOT NULL,
+   padtext ,
+   owner BIGINT,
+   -- Um comentario na estrutura do campo
+   status VARCHAR(3)  COMMENT "'on' ou 'off'",
+   metadata TEXT COMMENT "Reservado para uso futuro"
+
+) [42001-232]
+2025-11-04 10:55:58.989009-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]OWNERS"; SQL statement:
+OWNERS [42000-232]
+2025-11-04 11:54:49.276243-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "PADNAME" not found; SQL statement:
+-- Insere novo PAD para o OWNER 1
+INSERT INTO PADS (padname, padtext, owner)
+VALUES ('Primeiro Teste', 'Lorem ipsum', 1) [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-04 11:54:49.286644-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DISPLAY_NAME" not found; SQL statement:
+-- Insere novo OWNER
+-- Campos da tabela: ID, CREATED_AT, DISPLAY_NAME, EMAIL, LAST_LOGIN_AT, METADATA, PHOTOURL, STATUS, UID
+INSERT INTO OWNERS (
+    CREATED_AT,
+    DISPLAY_NAME,
+    EMAIL,
+    LAST_LOGIN_AT,
+    PHOTOURL,
+    UID,
+    STATUS
+) VALUES (
+    '2025-11-04 11:00:00',
+    'Marineuza Siriliano',
+    'marineuza@gmail.com',
+    '2025-08-29 10:14:00',
+    'fotomari.jpg',
+    '93H4T2034H384HT8342H',
+    'ON'
+), (
+    '2025-11-04 11:19:00',
+    'Joca da Silva',
+    'joca@silva.com',
+    '2025-08-19 10:14:00',
+    'fotojoca.png',
+    'FY48RY493URT84YT',
+    'ON'
+) [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.command.Parser.parseColumn(Parser.java:1171)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1156)
+	at org.h2.command.Parser.parseInsert(Parser.java:1530)
+	at org.h2.command.Parser.parsePrepared(Parser.java:698)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp.query(WebApp.java:1118)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
