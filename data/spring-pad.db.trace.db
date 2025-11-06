@@ -552,3 +552,181 @@ INSERT INTO OWNERS (
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-06 08:37:59.715512-03:00 jdbc[17]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-232]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:217)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:134)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2025-11-06 08:47:29.964282-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela ""OWNERS""\000d\000aCREATE TABLE OWNERS (\000d\000a  -- Chave primaria\000d\000aID  INT PRIMARY KEY [*]AUTO _INCREMENT,\000d\000a-- Data de criação do registro\000d\000aCREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a-- Data do ultimo login\000d\000aLAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIME"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Cria a tabela "OWNERS"
+CREATE TABLE OWNERS (
+  -- Chave primaria
+ID  INT PRIMARY KEY AUTO _INCREMENT,
+-- Data de criação do registro
+CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+-- Data do ultimo login
+LAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIME [42001-232]
+2025-11-06 08:47:44.941298-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela ""OWNERS""\000d\000aCREATE TABLE OWNERS (\000d\000a  -- Chave primaria\000d\000aID  INT PRIMARY KEY [*]AUTO _INCREMENT,\000d\000a-- Data de criação do registro\000d\000aCREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a-- Data do ultimo login\000d\000aLAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Cria a tabela "OWNERS"
+CREATE TABLE OWNERS (
+  -- Chave primaria
+ID  INT PRIMARY KEY AUTO _INCREMENT,
+-- Data de criação do registro
+CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+-- Data do ultimo login
+LAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP [42001-232]
+2025-11-06 08:47:49.790811-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela ""OWNERS""\000d\000aCREATE TABLE OWNERS (\000d\000a  -- Chave primaria\000d\000aID  INT PRIMARY KEY [*]AUTO _INCREMENT,\000d\000a-- Data de criação do registro\000d\000aCREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a-- Data do ultimo login\000d\000aLAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Cria a tabela "OWNERS"
+CREATE TABLE OWNERS (
+  -- Chave primaria
+ID  INT PRIMARY KEY AUTO _INCREMENT,
+-- Data de criação do registro
+CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+-- Data do ultimo login
+LAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP [42001-232]
+2025-11-06 08:47:51.443702-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela ""OWNERS""\000d\000aCREATE TABLE OWNERS (\000d\000a  -- Chave primaria\000d\000aID  INT PRIMARY KEY [*]AUTO _INCREMENT,\000d\000a-- Data de criação do registro\000d\000aCREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a-- Data do ultimo login\000d\000aLAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Cria a tabela "OWNERS"
+CREATE TABLE OWNERS (
+  -- Chave primaria
+ID  INT PRIMARY KEY AUTO _INCREMENT,
+-- Data de criação do registro
+CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+-- Data do ultimo login
+LAST_LOGIN_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP [42001-232]
+2025-11-06 10:45:51.380009-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao ""produto"" da aplicação\000d\000aCREATE TABLE PADS (\000d\000a    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a    PAD_TITLE VARCHAR(127) NOT NULL,\000d\000a    -- Mantém a capacidade máxima de 10^9 caracteres\000d\000a    PAD_CONTENT VARCHAR,\000d\000a    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira\000d\000a    PAD_OWNER INT NOT NULL,\000d\000a    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),\000d\000a    -- VARCHAR sem tamanho definido (até 10^9 bytes)\000d\000a    -- CLOB também pode ser apropriado para PAD_METADATA \000d\000a    PAD_METADATA VARCHAR[*]"; expected "(, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao "produto" da aplicação
+CREATE TABLE PADS (
+    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,
+    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PAD_TITLE VARCHAR(127) NOT NULL,
+    -- Mantém a capacidade máxima de 10^9 caracteres
+    PAD_CONTENT VARCHAR,
+    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira
+    PAD_OWNER INT NOT NULL,
+    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),
+    -- VARCHAR sem tamanho definido (até 10^9 bytes)
+    -- CLOB também pode ser apropriado para PAD_METADATA 
+    PAD_METADATA VARCHAR [42001-232]
+2025-11-06 10:45:58.123058-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao ""produto"" da aplicação\000d\000aCREATE TABLE PADS (\000d\000a    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a    PAD_TITLE VARCHAR(127) NOT NULL,\000d\000a    -- Mantém a capacidade máxima de 10^9 caracteres\000d\000a    PAD_CONTENT VARCHAR,\000d\000a    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira\000d\000a    PAD_OWNER INT NOT NULL,\000d\000a    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),\000d\000a    -- VARCHAR sem tamanho definido (até 10^9 bytes)\000d\000a    -- CLOB também pode ser apropriado para PAD_METADATA \000d\000a    PAD_METADATA VARCHAR,[*]"; expected "identifier"; SQL statement:
+-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao "produto" da aplicação
+CREATE TABLE PADS (
+    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,
+    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PAD_TITLE VARCHAR(127) NOT NULL,
+    -- Mantém a capacidade máxima de 10^9 caracteres
+    PAD_CONTENT VARCHAR,
+    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira
+    PAD_OWNER INT NOT NULL,
+    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),
+    -- VARCHAR sem tamanho definido (até 10^9 bytes)
+    -- CLOB também pode ser apropriado para PAD_METADATA 
+    PAD_METADATA VARCHAR, [42001-232]
+2025-11-06 10:45:59.378097-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao ""produto"" da aplicação\000d\000aCREATE TABLE PADS (\000d\000a    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a    PAD_TITLE VARCHAR(127) NOT NULL,\000d\000a    -- Mantém a capacidade máxima de 10^9 caracteres\000d\000a    PAD_CONTENT VARCHAR,\000d\000a    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira\000d\000a    PAD_OWNER INT NOT NULL,\000d\000a    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),\000d\000a    -- VARCHAR sem tamanho definido (até 10^9 bytes)\000d\000a    -- CLOB também pode ser apropriado para PAD_METADATA \000d\000a    PAD_METADATA VARCHAR,[*]"; expected "identifier"; SQL statement:
+-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao "produto" da aplicação
+CREATE TABLE PADS (
+    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,
+    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PAD_TITLE VARCHAR(127) NOT NULL,
+    -- Mantém a capacidade máxima de 10^9 caracteres
+    PAD_CONTENT VARCHAR,
+    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira
+    PAD_OWNER INT NOT NULL,
+    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),
+    -- VARCHAR sem tamanho definido (até 10^9 bytes)
+    -- CLOB também pode ser apropriado para PAD_METADATA 
+    PAD_METADATA VARCHAR, [42001-232]
+2025-11-06 10:46:00.780718-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao ""produto"" da aplicação\000d\000aCREATE TABLE PADS (\000d\000a    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a    PAD_TITLE VARCHAR(127) NOT NULL,\000d\000a    -- Mantém a capacidade máxima de 10^9 caracteres\000d\000a    PAD_CONTENT VARCHAR,\000d\000a    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira\000d\000a    PAD_OWNER INT NOT NULL,\000d\000a    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),\000d\000a    -- VARCHAR sem tamanho definido (até 10^9 bytes)\000d\000a    -- CLOB também pode ser apropriado para PAD_METADATA \000d\000a    PAD_METADATA VARCHAR,\000d\000a\000d\000a    -- Cria a chave de relacionamento entre PADS e OWNERS → Chave estrangeira (FK)\000d\000a  --   CONSTRAINT FK_PADS_OWNER FOREIGN KEY (PAD_OWNER) REFERENCES OWNERS (ID)\000d\000a[*])"; expected "identifier"; SQL statement:
+-- Cria a tabela PADS usando o prefixo PAD_ nos campos, referente ao "produto" da aplicação
+CREATE TABLE PADS (
+    PAD_ID INT PRIMARY KEY AUTO_INCREMENT,
+    PAD_CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PAD_TITLE VARCHAR(127) NOT NULL,
+    -- Mantém a capacidade máxima de 10^9 caracteres
+    PAD_CONTENT VARCHAR,
+    -- Coluna que referencia o dono (OWNER) do registro → Chave estrangeira
+    PAD_OWNER INT NOT NULL,
+    PAD_STATUS VARCHAR(3) DEFAULT 'ON' CHECK (PAD_STATUS IN ('ON', 'OFF', 'DEL')),
+    -- VARCHAR sem tamanho definido (até 10^9 bytes)
+    -- CLOB também pode ser apropriado para PAD_METADATA 
+    PAD_METADATA VARCHAR,
+
+    -- Cria a chave de relacionamento entre PADS e OWNERS → Chave estrangeira (FK)
+  --   CONSTRAINT FK_PADS_OWNER FOREIGN KEY (PAD_OWNER) REFERENCES OWNERS (ID)
+) [42001-232]
+2025-11-06 11:40:20.478184-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CONTATES\000d\000a[*]INT PRIMARY"; SQL statement:
+CREATE TABLE CONTATES
+INT PRIMARY [42000-232]
+2025-11-06 11:44:52.810213-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CONTATES(\000d\000a ID INT PRIMARY KEY AUTO_INCREMENT,\000d\000a CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a NAME VARCHAR(127)[*]"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127) [42001-232]
+2025-11-06 11:47:37.656562-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CONTATES(\000d\000a ID INT PRIMARY KEY AUTO_INCREMENT,\000d\000a CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\000d\000a NAME VARCHAR(127),\000d\000aEMAIL VARCHAR(255),[*]"; expected "identifier"; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127),
+EMAIL VARCHAR(255), [42001-232]
+2025-11-06 11:48:00.742612-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTATES" already exists; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127),
+EMAIL VARCHAR(255) ) [42101-232]
+2025-11-06 11:48:01.910242-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTATES" already exists; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127),
+EMAIL VARCHAR(255) ) [42101-232]
+2025-11-06 11:48:46.473607-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTATES" already exists; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127),
+EMAIL VARCHAR(255) ) [42101-232]
+2025-11-06 11:48:47.222205-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTATES" already exists; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127),
+EMAIL VARCHAR(255) ) [42101-232]
+2025-11-06 11:48:47.854738-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONTATES" already exists; SQL statement:
+CREATE TABLE CONTATES(
+ ID INT PRIMARY KEY AUTO_INCREMENT,
+ CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ NAME VARCHAR(127),
+EMAIL VARCHAR(255) ) [42101-232]
