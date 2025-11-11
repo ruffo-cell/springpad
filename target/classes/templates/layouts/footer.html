@@ -1,3 +1,10 @@
+<#--
+src/main/resources/templates/layouts/footer.html
+Parte inferior do template do site.
+Inclua no final de cada página com:
+<#include "layouts/footer.html">
+-->
+
 </main>
 
 <footer class="bg-dark text-light">
@@ -13,7 +20,7 @@
             </ul>
         </div>
 
-        <!-- Só aparece em telas maiores -->
+        <#-- Só aparece em telas maiores -->
         <div class="d-none d-md-block">
             <h4>Parceiros</h4>
             <ul>
@@ -29,8 +36,8 @@
             <ul>
                 <li><a href="/sobre/privacidade"><i class="bi bi-person-lock"></i> Sua Privacidade</a></li>
                 <li><a href="/sobre/contatos"><i class="bi bi-chat-dots-fill"></i> Faça Contato</a></li>
-                <li><a href="/sobre/site)"><i class="bi bi-info-circle-fill"></i> Sobre o Site</a></li>
-                <li><a href="/sobre/quemsomos)"><i class="bi bi-person-vcard-fill"></i> Quem Somos</a></li>
+                <li><a href="/sobre/site"><i class="bi bi-info-circle-fill"></i> Sobre o Site</a></li>
+                <li><a href="/sobre/quemsomos"><i class="bi bi-person-vcard-fill"></i> Quem Somos</a></li>
             </ul>
         </div>
     </div>
@@ -42,15 +49,18 @@
     </div>
 </footer>
 
-<!-- Injeta Bootstrap JavaScript -->
+<#-- Injeta Bootstrap JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
-<#injeta a biblioteca do firebase-->
+
+<#-- Injeta as bibliotecas do Firebase -->
 <script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-auth-compat.js"></script>
 
-<#--injeta o javaScript do templade -->
+<#-- Injeta configuração das chaves do Firebase -->
+<script src="/js/firebaseConfig.js"></script>
+
+<#-- Injeta o JavaScript do template -->
 <script src="/js/script.js"></script>
 
 </body>
-
 </html>
