@@ -1,0 +1,6 @@
+2025-11-13 08:40:09.342265-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]LAST_LOGIN_AT"; SQL statement:
+LAST_LOGIN_AT [42000-232]
+2025-11-13 08:40:17.910495-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]DISPLAY_NAME"; expected "DELETE, DROP"; SQL statement:
+DISPLAY_NAME [42001-232]
