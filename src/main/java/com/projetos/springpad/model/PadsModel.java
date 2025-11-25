@@ -1,3 +1,8 @@
+/**
+ * com.projetos.springpad.model.PadsModel
+ * Modela oa entidade "pads"
+ */
+
 package com.projetos.springpad.model;
 
 import jakarta.persistence.*;
