@@ -1,6 +1,6 @@
 /**
  * com.projetos.springpad.repository.PadsRepository
- * Repository da entidade `owner`.
+ * Repository da entidade pads.
  */
 
 package com.projetos.springpad.repository;
@@ -9,8 +9,10 @@ import com.projetos.springpad.dto.PadSummaryDTO;
 import com.projetos.springpad.model.PadsModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface PadsRepository extends JpaRepository<PadsModel, Long> {
 
@@ -24,4 +26,7 @@ public interface PadsRepository extends JpaRepository<PadsModel, Long> {
             "ORDER BY p.createdAt DESC")
     List<PadSummaryDTO> findSummariesByStatusOrderByCreatedAtDesc(PadsModel.Status status);
 
+    // Adicione ao interface existente
+    @Query("SELECT p FROM PadsModel p LEFT JOIN FETCH p.ownerModel WHERE p.id = :id")
+    Optional<PadsModel> findByIdWithOwner(@Param("id") Long id);
 }
