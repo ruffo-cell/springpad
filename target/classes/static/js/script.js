@@ -1,4 +1,5 @@
 /**
+ * src/main/resources/static/js/script.js
  * JavaScript do layout.
  * Template com autenticação de usuário pelo Google.
  * Referências desta página: https://firebase.google.com/docs/build?hl=pt-br
@@ -49,7 +50,7 @@ const apiLogoutEndpoint = '/owner/logout';
  *  - Se true, mostra logs
  *  - Se false, oculta logs
  */
-const showLogs = true;
+const showLogs = false;
 
 /**************************************************************************
  * Não altere nada à partir daqui a não ser que saiba o que está fazendo! *
@@ -335,16 +336,16 @@ const isoToTimestamp = (isoString) => {
 
 // Oculta o menu ao clicar em um item, em telas menores
 document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('#mynavbar .nav-link');
-  const collapseElement = document.getElementById('mynavbar');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (collapseElement.classList.contains('show')) {
-        const collapse = new bootstrap.Collapse(collapseElement);
-        collapse.hide();
-      }
+    const navLinks = document.querySelectorAll('#mynavbar .nav-link');
+    const collapseElement = document.getElementById('mynavbar');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (collapseElement.classList.contains('show')) {
+                const collapse = new bootstrap.Collapse(collapseElement);
+                collapse.hide();
+            }
+        });
     });
-  });
 });
 
 // Listener para o estado de autenticação
@@ -368,3 +369,18 @@ auth.onAuthStateChanged((user) => {
 
 // Adiciona o Event Listener ao elemento `userInOut`
 userInOut.addEventListener('click', handleUserInOutClick);
+
+// Fecha caixas de alerta após 5 segundos
+const delayInMilliseconds = 5000;
+document.addEventListener('DOMContentLoaded', function () {
+    const alertElement = document.getElementById('baseMainAlert');
+    if (alertElement) {
+        const bsAlert = new bootstrap.Alert(alertElement);
+        setTimeout(function () { bsAlert.close(); }, delayInMilliseconds);
+    }
+});
+
+// Bloqueia reenvio do formulário ao atualizar a página
+if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+}
